@@ -12,7 +12,7 @@
 раундов, свой throttle, свой текстовый протокол вызова инструментов и отдельная
 модель-судья. Теперь это не нужно:
 
-| v1 (`archive/agent_freedeepseek.py`) | Сейчас |
+| v1 (удалён, см. git-историю) | Сейчас |
 |---|---|
 | свой вызов LLM и стрим | модель OpenCode (бесплатная, Console, Go или локальная) |
 | раунды, `StepBudget`, парсинг вызовов | нативные tool-calls и лимит `steps` у агента |
@@ -21,8 +21,8 @@
 | `read_file`/`write_file`/`run_command` | встроенные `read`, `edit`, `write`, `grep`, `shell` |
 | GitHub API + ветки + PR | навык `.opencode/skills/github-tasks` |
 
-Старая реализация сохранена в [`archive/`](archive/) — она больше не используется, но
-полезна как история решений и источник идей.
+Старая реализация удалена из репозитория — она больше не используется, но доступна
+в git-истории как история решений и источник идей.
 
 ## Быстрый старт
 
@@ -54,7 +54,6 @@
 | `.opencode/skills/github-tasks/SKILL.md` | инструкция навыка |
 | `.opencode/skills/github-tasks/scripts/gh_tasks.py` | CLI: issues, ветки, коммиты, PR, отчёты |
 | `.opencode/skills/github-tasks/README.md` | документация навыка (дополнение к opencode.ai) |
-| `archive/` | прежняя реализация v1 и её документация |
 
 ## Модели
 
@@ -89,4 +88,4 @@
 - OpenCode: <https://opencode.ai/docs/>
 - Навыки: <https://opencode.ai/docs/skills/>
 - Агенты: <https://opencode.ai/docs/agents/>
-- История v1: [`archive/README-v1.md`](archive/README-v1.md)
+- История v1: в git-истории (каталог `archive/` удалён)

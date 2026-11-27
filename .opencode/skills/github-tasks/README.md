@@ -1,6 +1,6 @@
 # github-tasks — навык OpenCode для работы с задачами GitHub
 
-Навык переносит полезную часть автономного агента из [`agent_freedeepseek.py`](../../../archive/agent_freedeepseek.py)
+Навык переносит полезную часть автономного агента v1 (`agent_freedeepseek.py`, удалён из репозитория)
 в формат OpenCode skill: `SKILL.md` с инструкцией и детерминированный CLI
 `scripts/gh_tasks.py`. Встроенного LLM-цикла здесь нет — роль модели выполняет сам
 агент OpenCode, а скрипт делает только операции с GitHub API и git.
@@ -208,4 +208,4 @@ python3 $S --repo owner/name report 42 --body-file /tmp/report.md
 - Модели и бесплатные модели: <https://opencode.ai/docs/models/>
 - Console (платные модели): <https://opencode.ai/docs/console/models/>
 - Go (подписка): <https://opencode.ai/docs/console/go/>
-- Исходный агент: [`agent_freedeepseek.py`](../../../archive/agent_freedeepseek.py)
+- Исходный агент v1 (`agent_freedeepseek.py`) — в git-истории
